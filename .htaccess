@@ -1,2 +1,5 @@
 #RewriteEngine On
 #RewriteRule index.html index.php [L]
+
+RewriteEngine On
+RewriteRule ^([0-9]+).html /^([0-9]+).php [QSA,L]

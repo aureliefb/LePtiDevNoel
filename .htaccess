@@ -8,4 +8,4 @@ RewriteEngine on
 #RewriteRule ^index\.html$ / [NC,R,L] 
 #ErrorDocument 404 /404.html
 
-RedirectMatch 301 "(.*)\.pdf$" "$1.html"
+RedirectMatch 301 "(.*)\.php$" "$1.html"

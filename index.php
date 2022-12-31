@@ -19,7 +19,7 @@
 
   <body class="container">
 
-  <?php include 'modale_noSanta.html'; ?>
+  <?php include 'modale_noSanta.php'; ?>
 	
 	<div class="columns">
 
@@ -76,7 +76,7 @@
 					</figure>
 					<p class="subtitle">Lumières, illuminations, animations, projections ou spectacles...  Noël est toujours synonyme de <span class="clignoter">lumières et de couleurs </span>!</p>
 				</div>
-				<div><?php include 'photos_noel.html' ?></div>
+				<div><?php include 'photos_noel.php' ?></div>
 			</article>
 		</div>
 
@@ -124,7 +124,7 @@
 								</figure>
 							</div>
 					  <div id="play_audio" class="content">
-							<?php echo 'music.html' ?>
+							<?php include 'music.php' ?>
 						</div>
 					</div>
 		  </div>
@@ -138,7 +138,7 @@
 		  <div class="hero-head">
 		    <header class="tabs is-boxed is-fullwidth">
 		      <div class="container">
-		        	<?php echo 'aroundTheWorld.html' ?>
+		        	<?php include 'aroundTheWorld.php' ?>
 		      </div>
 		    </header>
 		  </div>

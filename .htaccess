@@ -1,0 +1,2 @@
+RewriteCond %/(.+).php
+RewriteRule ^ /%1.html [L,R=301]

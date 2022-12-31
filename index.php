@@ -36,7 +36,7 @@
 
 				<!-- <div class="column"> -->
 					<figure id="mailbox" class="image is-256x256 has-tooltip-warning" data-tooltip="Hey ! Père Noël, t'as reçu une lettre...">
-						<img class="is-rounded" src="img/mailbox.png"/>
+						<img class="is-rounded" src="../img/mailbox.png"/>
 					</figure>	
 
 					<div id="modal-js-example" class="modal modal_letter">
@@ -44,7 +44,7 @@
 					  <div class="modal-content">
 					    <div class="box">
 					      <figure>
-									<img src="img/lineStars.png"/>
+									<img src="../img/lineStars.png"/>
 								</figure>
 					      <p class="SantaLetter">
 					      Cher Père Noël,<br/>
@@ -53,7 +53,7 @@
 								S'il te plaît, sois gentil, j'espère que tu déposeras sous mon sapin quelques-uns des cadeaux que j'ai mis sur ma liste. Je te laisserai un en-cas et un coup à boire quand tu passeras le 24 ;)
 								</p>
 								<figure>
-									<img src="img/lineStars.png"/>
+									<img src="../img/lineStars.png"/>
 								</figure>
 					    </div>
 					  </div>

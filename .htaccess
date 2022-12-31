@@ -1,6 +1,6 @@
 RewriteEngine On
 RewriteRule index.html index.php [L]
 RewriteRule aroundTheWorld.html aroundTheWorld.php [L]
-
-
-
+RewriteRule music.html music.php [L]
+RewriteRule photos_noel.html photos_noel.php [L]
+RewriteRule modale_noSanta.html modale_noSanta.php [L]

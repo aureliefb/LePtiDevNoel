@@ -1,0 +1,377 @@
+html, body {
+
+}
+
+.cursor_sapin {
+	cursor: url('../img/sapinCursor.png'), auto;
+}
+
+.santa_letter {
+	cursor: url('../img/santaCursor.png'), auto;
+}
+
+.cursor_champ {
+		cursor: url('../img/cursorChamp.png'), auto;
+}
+
+:root {
+	--gold: #bf9b30;
+	--gold2: #F8B229;
+	--red: #BB252B;
+	--green: #05B956;
+}
+
+.col-left, .col-right {
+	margin: 20px 0;
+}
+
+
+.col-right .tile {
+	background-color: var(--red);
+	color: var(--gold2);
+}
+
+#welcome {
+	text-align: center;
+	font-family: 'Rubik Dirt', cursive;
+	color: var(--gold);
+	font-size: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	position: relative;
+	line-height: 100px;
+}
+
+#welcome:after {
+	background: linear-gradient(to right, var(--green) 10%, var(--gold) 20%, #ffcd02 30%, #ffcd02 45%, var(--red) 50%, #e84f47 65%, #65c1ac 85%);
+	position: absolute;
+	content: '';
+	height: 10px;
+	right: 0;
+	left: 0;
+	top: 132px;
+	border-radius: 25px;
+}
+
+/*
+Noël en lumières
+https://codepen.io/memoweb/pen/BaoKJXV
+*/
+#lightChristmas {
+	margin-bottom: 0;
+	font-family: 'Codystar', cursive;
+	font-size: 55px;
+	text-align: center;
+	animation-duration: 5s;
+	animation-name: clignoter;
+	animation-iteration-count: infinite;
+	transition: none;
+}
+@keyframes clignoter {
+	/*0%   { color:#bf9b30; }*/
+	20%   {color:#F7E65A; }
+	40%   {color:#F1A200; }
+	60%   {color:#FF2E1A; }
+	80%   {color:#F4DC96; }
+	100% { opacity:#bf9b30; }
+}
+
+.content .sapinGold {
+	margin: 0 !important;
+}
+.sapinGold {
+	max-width: 250px;
+}
+
+#lights .content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#lights .subtitle {
+	color: #fbf49f;
+}
+
+.clignoter {
+	animation-duration: 2s;
+	animation-name: clignoterBis;
+	animation-iteration-count: infinite;
+}
+@keyframes clignoterBis {
+	/*0%   { color:#bf9b30; }*/
+	10%   {color:#add8e6; } /* blue */
+	30%   {color:#bf9b30; }
+	50%   {color:#FF2E1A; }
+	70%   {color:#90ee90; } /* green */
+	90%   {color:#ffd700; } /* gold */
+	100% { opacity:#bf9b30; }
+}
+
+/*
+* Carousel photos lumières de Noël
+* https://codepen.io/tianyili/pen/qBEdeoy
+*/
+.pic-ctn {
+  position: relative;
+  margin-top: 60px;
+  margin-left: 15px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  animation: display 40s infinite;
+}
+
+img[data-id='1'] {
+  animation-delay: 1s;
+}
+img[data-id='2'] {
+  animation-delay: 4s;
+}
+img[data-id='3'] {
+  animation-delay: 8s;
+}
+img[data-id='4'] {
+  animation-delay: 12s;
+}
+img[data-id='5'] {
+  animation-delay: 16s;
+}
+img[data-id='6'] {
+  animation-delay: 20s;
+}
+img[data-id='7'] {
+  animation-delay: 24s;
+}
+img[data-id='8'] {
+  animation-delay: 28s;
+}
+img[data-id='9'] {
+  animation-delay: 32s;
+}
+img[data-id='10'] {
+  animation-delay: 36s;
+}
+
+
+/*img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+img:nth-child(6) {
+  animation-delay: 10s;
+}
+img:nth-child(7) {
+  animation-delay: 12s;
+}
+img:nth-child(8) {
+  animation-delay: 14s;
+}
+img:nth-child(9) {
+  animation-delay: 16s;
+}
+img:nth-child(10) {
+  animation-delay: 18s;
+}*/
+
+/*
+Animation lettre au Père Noël 
+https://codepen.io/cassie-codes/pen/rNNGdmw
+*/
+#letter figure {
+	border-radius: 50%;
+}
+
+#letter img {
+	background-color: var(--gold2);
+}
+
+#letter img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.SantaLetter {
+	font-family: 'Cedarville Cursive', cursive;
+	font-size: 30px;
+	padding: 25px;
+}
+
+
+#secondLine {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#dinner {
+	background-image: linear-gradient(rgba(250, 250, 250, 0.7), rgba(240, 240, 240, 0.1)), url('../img/fond_menu_.png');
+	background-size: cover;
+	width: 550px;
+	height: 690px;
+	text-align: center;
+	border-radius: 5px;
+	padding: 30px 20px;
+}
+
+#dinner .title {
+	font-family: 'Parisienne', cursive;
+	font-size: 42px;
+}
+
+#dinner .content {
+	line-height: 1.8em;
+}
+
+#dinner .name {
+	color: var(--gold);
+	font-family: 'Parisienne', cursive;
+	font-size: 32px;
+}
+
+#dinner .details {
+	color: var(--red);
+	font-style: italic;
+}
+
+#secondLine .column:first-child {
+	display: flex;
+	justify-content: center;
+}
+
+
+#songs .box {
+	border: 15px solid var(--green);
+}
+
+#songs .music_icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 0;
+}
+
+#songs .content figure:not(:last-child) {
+	margin-bottom: 0 !important;
+}
+
+#play_audio {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: center;
+}
+
+audio {
+	width: 230px;
+	height: 40px;
+}
+
+
+/*
+Trad Noël dans le monde
+https://codepen.io/cassie-codes/pen/rNNGdmw
+*/
+#christmasWorld {
+	border-radius: 25px;
+	background-color: #DAA520;
+	margin-top: 40px;
+}
+
+#christmasWorld .tabs:first-child {
+	border-radius: 25px 2px 0 0;
+}
+
+#christmasWorld .tabs li a {
+	font-family: 'Frijole', cursive;
+}
+
+#christmasWorld .tabs li.is-active a {
+	background-color: var(--red);
+	color: white;
+	font-weight: bold;
+}
+
+#christmasWorld .tabs li a:hover {
+	background-color: white;
+	color: var(--red);
+	cursor: url('../img/bonnet_cursor.png'), auto;
+}
+
+#christmasWorld .hero-body {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height: 350px;
+	align-items: center;
+}
+
+#christmasWorld .hero-body figure {
+	max-width: 250px;
+}
+
+#christmasWorld .hero-body .content {
+	margin-left: 50px;
+	text-align: left;
+}
+
+#christmasWorld .hero-body .wish {
+	font-family: 'Frijole', cursive;
+	/*max-width: 300px;*/
+	text-align: center;
+	font-size: x-large;
+}
+
+#christmasWorld .hero-foot .subtitle {
+	font-size: 12px;
+}
+
+.footer {
+	padding: 1rem 1.5rem 1rem !important;
+}

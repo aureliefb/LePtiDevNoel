@@ -124,7 +124,7 @@
 								</figure>
 							</div>
 					  <div id="play_audio" class="content">
-							<?php include 'music.html' ?>
+							<?php echo 'music.html' ?>
 						</div>
 					</div>
 		  </div>
@@ -138,7 +138,7 @@
 		  <div class="hero-head">
 		    <header class="tabs is-boxed is-fullwidth">
 		      <div class="container">
-		        	<?php include 'aroundTheWorld.html' ?>
+		        	<?php echo 'aroundTheWorld.html' ?>
 		      </div>
 		    </header>
 		  </div>

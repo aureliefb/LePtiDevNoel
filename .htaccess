@@ -1,14 +1,2 @@
-#RewriteEngine on 
-#RewriteBase / RewriteCond %{THE_REQUEST} \ /(.+)\.php 
-#RewriteRule ^ /%1.html [L,R=301] 
-#RewriteRule ^index\.html$ index.php [T=application/x-httpd-php,L] 
-#RewriteEngine on 
-#rewritecond %{http_host} ^xyz.org [nc] 
-#rewriterule ^(.*)$ http://xyz./$1 [r=301,nc] 
-#RewriteRule ^index\.html$ / [NC,R,L] 
-#ErrorDocument 404 /404.html
-
 RewriteEngine On
-RewriteRule index.php /index.html
-
-#RedirectMatch 301 "(.*)\.php$" "$1.html"
+RewriteRule ^(.*)\.html$ $1.php [L]

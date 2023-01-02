@@ -5,4 +5,9 @@ RewriteEngine On
 #RewriteRule photos_noel.html photos_noel.php [L]
 #RewriteRule modale_noSanta.html modale_noSanta.php [L]
 
-RewriteRule ^(.*)\.html$ $1.php [L]
+
+#RewriteRule ^(.*)\.html$ $1.php [L]
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^.*\.(jpg|css|js|gif)$ [NC]
+RewriteRule ^(.*) index.php?page=$1 [QSA,L]

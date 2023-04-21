@@ -1,7 +1,7 @@
 Site développé en déc 2022 en réponse à un concours lancé par un groupe de développeurs.
 Thème et consignes : créer, sans template, un site web sur le thème de Noël, tous langages et technos autorisés.
-Date limite : 31 décembre.
-Prix : 1 an d'hébergement chez un O2Switch
+Date limite : 31 décembre 2022.
+Prix : 1 an d'hébergement chez O2Switch
 
 ------------
 
